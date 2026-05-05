@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Stackly</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="preloader"><img src="logo1.webp" alt="Stackly Logo" class="preloader-logo"></div>
+
+    <main class="auth-page">
+        <img src="assets/login_bg.png" alt="Abstract Background" class="auth-bg">
+
+        <div class="auth-card animate-scale">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <a href="index.html" class="logo" style="justify-content: center;"><img src="logo1.webp"
+                        alt="Stackly Logo" style="height: 48px; width: auto;"></a>
+            </div>
+
+            <h2>Create an Account</h2>
+
+            <form id="authForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Work Email</label>
+                    <input type="email" id="email" placeholder="name@company.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="role">Role</label>
+                    <select id="role" required
+                        style="width:100%;padding:0.75rem 1rem;border-radius:0.5rem;border:none;background:rgba(255, 255, 255, 0.1);color:white;font-size:1rem;outline:none;">
+                        <option value="" disabled selected style="color:black;">Select a Role</option>
+                        <option value="user" style="color:black;">User</option>
+                        <option value="admin" style="color:black;">Admin</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="••••••••" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Create Account</button>
+            </form>
+
+            <div class="auth-links"
+                style="display: flex; flex-direction: column; gap: 0.5rem; align-items: center; margin-top: 1.5rem;">
+                <span>Already have an account? <a href="login.html">Log in</a></span>
+                <a href="index.html" style="font-size: 0.85rem; color: #cbd5e1; text-decoration: underline;">&larr; Back
+                    to Home</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
