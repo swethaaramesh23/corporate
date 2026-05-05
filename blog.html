@@ -9,7 +9,12 @@
 </head>
 
 <body>
-    <div class="preloader"><img src="logo1.webp" alt="Stackly Logo" class="preloader-logo"></div>
+    <div class="preloader">
+        <div class="preloader-content">
+            <img src="logo1.webp" alt="Stackly Logo" class="preloader-logo">
+            <div class="loading-dots"><span></span><span></span><span></span></div>
+        </div>
+    </div>
     <header>
         <div class="container nav-container">
             <a href="index.html" class="logo"><img src="logo1.webp" alt="Stackly Logo"
@@ -93,7 +98,72 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="card blog-card animate-on-scroll" style="transition-delay:0.4s; padding:0;">
+                        <div
+                            style="background-color: #f59e0b; height: 200px; width: 100%; display: flex; align-items: center; justify-content: center; color: white;">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 2H3v16h5v4l4-4h9V2z" />
+                            </svg>
+                        </div>
+                        <div class="blog-card-body">
+                            <span class="blog-tag">Productivity</span>
+                            <h3>Streamlining Remote Workflows</h3>
+                            <p>Discover 5 practical strategies to keep your remote teams engaged, aligned, and highly productive.</p>
+                            <div class="blog-card-meta">
+                                <span>March 30, 2026</span> • <span>6 min read</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card blog-card animate-on-scroll" style="transition-delay:0.5s; padding:0;">
+                        <div
+                            style="background-color: #8b5cf6; height: 200px; width: 100%; display: flex; align-items: center; justify-content: center; color: white;">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            </svg>
+                        </div>
+                        <div class="blog-card-body">
+                            <span class="blog-tag">Finance</span>
+                            <h3>Optimizing Cloud Spend</h3>
+                            <p>Is your cloud bill out of control? Learn how enterprise companies are reducing infrastructure costs.</p>
+                            <div class="blog-card-meta">
+                                <span>March 12, 2026</span> • <span>7 min read</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card blog-card animate-on-scroll" style="transition-delay:0.6s; padding:0;">
+                        <div
+                            style="background-color: #10b981; height: 200px; width: 100%; display: flex; align-items: center; justify-content: center; color: white;">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                            </svg>
+                        </div>
+                        <div class="blog-card-body">
+                            <span class="blog-tag">Data</span>
+                            <h3>Real-time Analytics Architectures</h3>
+                            <p>A deep dive into building systems that process millions of events per second with sub-millisecond latency.</p>
+                            <div class="blog-card-meta">
+                                <span>February 24, 2026</span> • <span>10 min read</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="section bg-dark text-center">
+            <div class="container animate-scale">
+                <h2>Subscribe to our Newsletter</h2>
+                <p style="margin-bottom:2rem; color: #cbd5e1;">Get the latest industry insights and company news delivered straight to your inbox.</p>
+                <form id="newsletterForm" style="max-width: 500px; margin: 0 auto; display: flex; gap: 1rem;">
+                    <input type="email" placeholder="Enter your email address" required style="flex: 1; padding: 0.75rem 1.5rem; border-radius: 0.5rem; border: none; outline: none; font-family: inherit; font-size: 1rem;">
+                    <button type="submit" class="btn btn-primary" style="white-space: nowrap;">Subscribe</button>
+                </form>
             </div>
         </section>
     </main>
