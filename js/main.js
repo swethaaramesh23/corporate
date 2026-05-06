@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Intersection Observer for ALL animated elements
-    const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
+    const observerOptions = { root: null, rootMargin: '0px', threshold: 0.05 };
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -41,7 +41,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    document.querySelectorAll('.animate-on-scroll, .animate-slide-left, .animate-slide-right, .animate-scale').forEach(el => observer.observe(el));
+    const animatedElements = document.querySelectorAll('.animate-on-scroll, .animate-slide-left, .animate-slide-right, .animate-scale');
+    animatedElements.forEach(el => observer.observe(el));
+    
+    // Fallback: ensure elements at the top or visible are shown even if observer delays
+    setTimeout(() => {
+        animatedElements.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                el.classList.add('is-visible');
+            }
+        });
+    }, 100);
 
     // Set Active Link
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
