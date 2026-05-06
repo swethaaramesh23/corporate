@@ -127,4 +127,42 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => toast.remove(), 3500);
     }
 
+    // Counter Up Animation
+    const counterUp = (el) => {
+        const target = parseFloat(el.getAttribute('data-target'));
+        const duration = 2000; // 2 seconds
+        const stepTime = 20;
+        const steps = duration / stepTime;
+        const increment = target / steps;
+        let current = 0;
+
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                el.innerText = target % 1 === 0 ? target : target.toFixed(1);
+                // Append suffix if exists
+                const suffix = el.getAttribute('data-suffix') || '';
+                el.innerText += suffix;
+                clearInterval(timer);
+            } else {
+                el.innerText = Math.floor(current) + (el.getAttribute('data-suffix') || '');
+            }
+        }, stepTime);
+    };
+
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counters = entry.target.querySelectorAll('.counter-value');
+                counters.forEach(counter => counterUp(counter));
+                counterObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    const statsSection = document.querySelector('.section.bg-dark');
+    if (statsSection) {
+        counterObserver.observe(statsSection);
+    }
+
 });

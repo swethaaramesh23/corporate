@@ -37,7 +37,8 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero"
+            style="background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('assets/hero_bg.webp'); background-size: cover; background-position: center;">
             <div class="container hero-container">
                 <div class="hero-content animate-slide-left">
                     <span class="hero-subtitle">Enterprise Grade Solutions</span>
@@ -77,11 +78,11 @@
                     style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4rem; opacity: 0.6; filter: grayscale(1);">
                     <img src="assets/service1.webp" alt="Partner 1"
                         style="height: 30px; width: auto; object-fit: contain;" class="animate-on-scroll delay-1">
-                    <img src="assets/service2.webp" alt="Partner 2"
+                    <img src="assets/service_hero.webp" alt="Partner 2"
                         style="height: 30px; width: auto; object-fit: contain;" class="animate-on-scroll delay-2">
-                    <img src="assets/service3.webp" alt="Partner 3"
+                    <img src="assets/services_hero.webp" alt="Partner 3"
                         style="height: 30px; width: auto; object-fit: contain;" class="animate-on-scroll delay-3">
-                    <img src="assets/service_hero.webp" alt="Partner 4"
+                    <img src="assets/hero_bg.webp" alt="Partner 4"
                         style="height: 30px; width: auto; object-fit: contain;" class="animate-on-scroll delay-4">
                     <img src="assets/about_team.webp" alt="Partner 5"
                         style="height: 30px; width: auto; object-fit: contain;" class="animate-on-scroll delay-5">
@@ -94,7 +95,7 @@
             <div class="container">
                 <div class="flex-layout">
                     <div class="animate-slide-left">
-                        <img src="assets/about_team.webp" alt="Our Mission"
+                        <img src="assets/img4.webp" alt="Our Mission"
                             style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); width: 100%; height: 500px; object-fit: cover;">
                     </div>
                     <div class="animate-slide-right delay-1">
@@ -135,19 +136,19 @@
                 </div>
                 <div class="grid-3">
                     <div class="card animate-scale delay-1">
-                        <img src="assets/services_hero.webp" alt="Global Solutions" class="card-img" loading="lazy" />
+                        <img src="assets/img5.webp" alt="Global Solutions" class="card-img" loading="lazy" />
                         <h3>Global Enterprise</h3>
                         <p>We deliver scalable cloud-based enterprise solutions that help businesses expand globally.
                             Our platforms ensure high performance, security, and seamless integration.</p>
                     </div>
                     <div class="card animate-scale delay-2">
-                        <img src="assets/about_team.webp" alt="Expert Team" class="card-img" loading="lazy" />
+                        <img src="assets/img6.webp" alt="Expert Team" class="card-img" loading="lazy" />
                         <h3>Expert Strategy</h3>
                         <p>Our experts provide data-driven insights and strategic consulting to help you make smarter
                             business decisions and optimize your performance.</p>
                     </div>
                     <div class="card animate-scale delay-3">
-                        <img src="assets/career_hero.webp" alt="Future Ready" class="card-img" loading="lazy" />
+                        <img src="assets/img7.webp" alt="Future Ready" class="card-img" loading="lazy" />
                         <h3>Future Operations</h3>
                         <p>We implement advanced security systems and modern operational frameworks to protect your
                             business and ensure smooth, efficient processes.</p>
@@ -200,23 +201,28 @@
         </section>
 
         <!-- Stats -->
-        <section class="section bg-dark" style="background: var(--primary-color); color: white;">
+        <section class="section bg-dark"
+            style="background: linear-gradient(rgba(2, 6, 23, 0.9), rgba(2, 6, 23, 0.9)), url('assets/hero_bg.webp') center/cover no-repeat; color: white;">
             <div class="container">
                 <div class="grid-4">
                     <div class="text-center animate-scale delay-1">
-                        <h2 style="color: white; font-size: 3rem;">500+</h2>
+                        <h2 style="color: white; font-size: 3rem;"><span class="counter-value" data-target="500"
+                                data-suffix="+">0</span></h2>
                         <p style="color: rgba(255,255,255,0.7);">Clients Worldwide</p>
                     </div>
                     <div class="text-center animate-scale delay-2">
-                        <h2 style="color: white; font-size: 3rem;">98%</h2>
+                        <h2 style="color: white; font-size: 3rem;"><span class="counter-value" data-target="98"
+                                data-suffix="%">0</span></h2>
                         <p style="color: rgba(255,255,255,0.7);">Client Retention</p>
                     </div>
                     <div class="text-center animate-scale delay-3">
-                        <h2 style="color: white; font-size: 3rem;">50+</h2>
+                        <h2 style="color: white; font-size: 3rem;"><span class="counter-value" data-target="50"
+                                data-suffix="+">0</span></h2>
                         <p style="color: rgba(255,255,255,0.7);">Countries Served</p>
                     </div>
                     <div class="text-center animate-scale delay-4">
-                        <h2 style="color: white; font-size: 3rem;">1.2k+</h2>
+                        <h2 style="color: white; font-size: 3rem;"><span class="counter-value" data-target="1.2"
+                                data-suffix="k+">0</span></h2>
                         <p style="color: rgba(255,255,255,0.7);">Team Members</p>
                     </div>
                 </div>
@@ -230,30 +236,70 @@
                     <span class="hero-subtitle">Testimonials</span>
                     <h2>Trusted by Industry Leaders</h2>
                 </div>
-                <div class="grid-3" style="margin-top:3rem;">
-                    <div class="testimonial-card animate-slide-left delay-1">
-                        <p>"Stackly transformed our data pipeline. We saw a 40% increase in operational efficiency
-                            within months."</p>
-                        <div>
-                            <span class="testimonial-author">Sarah Chen</span><br>
-                            <span class="testimonial-role">CTO, Finova Inc.</span>
+                <div class="flex-layout" style="margin-top: 4rem; align-items: stretch;">
+                    <div class="grid-1" style="flex: 1; display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div class="testimonial-card animate-slide-left delay-1">
+                            <p>"Stackly transformed our data pipeline. We saw a 40% increase in operational efficiency
+                                within months."</p>
+                            <div>
+                                <span class="testimonial-author">Sarah Chen</span><br>
+                                <span class="testimonial-role">CTO, Finova Inc.</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card animate-slide-left delay-2">
+                            <p>"Their cybersecurity audit saved us from a major vulnerability. Truly world-class
+                                expertise."
+                            </p>
+                            <div>
+                                <span class="testimonial-author">James Walker</span><br>
+                                <span class="testimonial-role">VP Engineering, Orbix</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card animate-slide-left delay-3">
+                            <p>"The support team is phenomenal — responsive, knowledgeable, and genuinely invested in
+                                our
+                                success."</p>
+                            <div>
+                                <span class="testimonial-author">Priya Sharma</span><br>
+                                <span class="testimonial-role">CEO, CloudNest</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="testimonial-card animate-scale delay-2">
-                        <p>"Their cybersecurity audit saved us from a major vulnerability. Truly world-class expertise."
+                    <div class="animate-slide-right delay-2" style="flex: 1;">
+                        <img src="assets/img8.webp" alt="Industry Leadership"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-xl);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership Section -->
+        <section class="section">
+            <div class="container text-center">
+                <span class="hero-subtitle">Our Leadership</span>
+                <h2>Meet the Visionaries</h2>
+                <div class="grid-3" style="margin-top: 3rem;">
+                    <div class="card animate-on-scroll delay-1">
+                        <img src="assets/i1.webp" alt="Elena Rodriguez"
+                            style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem;">
+                        <h3>Elena Rodriguez</h3>
+                        <p class="hero-subtitle" style="font-size: 0.85rem; margin-bottom: 0.5rem;">CEO</p>
+                        <p style="font-size: 0.95rem;">Leading Stackly's vision for a decentralized enterprise future.
                         </p>
-                        <div>
-                            <span class="testimonial-author">James Walker</span><br>
-                            <span class="testimonial-role">VP Engineering, Orbix</span>
-                        </div>
                     </div>
-                    <div class="testimonial-card animate-slide-right delay-3">
-                        <p>"The support team is phenomenal — responsive, knowledgeable, and genuinely invested in our
-                            success."</p>
-                        <div>
-                            <span class="testimonial-author">Priya Sharma</span><br>
-                            <span class="testimonial-role">CEO, CloudNest</span>
-                        </div>
+                    <div class="card animate-on-scroll delay-2">
+                        <img src="assets/i2.webp" alt="Marcus Chen"
+                            style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem;">
+                        <h3>Marcus Chen</h3>
+                        <p class="hero-subtitle" style="font-size: 0.85rem; margin-bottom: 0.5rem;">CTO</p>
+                        <p style="font-size: 0.95rem;">Architecting high-performance scalable infrastructure.</p>
+                    </div>
+                    <div class="card animate-on-scroll delay-3">
+                        <img src="assets/i3.webp" alt="Sarah Jenkins"
+                            style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem;">
+                        <h3>Sarah Jenkins</h3>
+                        <p class="hero-subtitle" style="font-size: 0.85rem; margin-bottom: 0.5rem;">VP Operations</p>
+                        <p style="font-size: 0.95rem;">Ensuring operational excellence across 50+ countries.</p>
                     </div>
                 </div>
             </div>
