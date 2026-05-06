@@ -16,54 +16,58 @@
         </div>
     </div>
 
-    <main class="auth-page">
-        <img src="assets/login_bg.png" alt="Abstract Background" class="auth-bg">
+    <main class="auth-page" style="position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+        <img src="assets/about_team.webp" alt="Background" class="auth-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; filter: brightness(0.4);">
 
-        <div class="auth-card animate-scale">
-            <div style="text-align: center; margin-bottom: 2rem;">
+        <div class="auth-card animate-scale" style="background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); padding: 3rem; border-radius: var(--radius-lg); width: 100%; max-width: 450px; box-shadow: var(--shadow-2xl); color: white;">
+            <div style="text-align: center; margin-bottom: 2rem;" class="animate-on-scroll">
                 <a href="index.html" class="logo" style="justify-content: center;"><img src="logo1.webp"
                         alt="Stackly Logo" style="height: 48px; width: auto;"></a>
             </div>
 
-            <h2>Create an Account</h2>
+            <h2 style="text-align: center; margin-bottom: 0.5rem; color: white;" class="animate-on-scroll delay-1">Join Stackly</h2>
+            <p style="text-align: center; color: #94a3b8; margin-bottom: 2rem;" class="animate-on-scroll delay-2">Start your 14-day free enterprise trial today.</p>
 
             <form id="authForm">
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" placeholder="John Doe" required>
+                <div class="form-group animate-on-scroll delay-3" style="margin-bottom: 1.25rem;">
+                    <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Full Name</label>
+                    <input type="text" id="name" placeholder="John Doe" required style="width: 100%; padding: 0.75rem 1rem; border-radius: 0.5rem; border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(255, 255, 255, 0.05); color: white; outline: none; font-family: inherit; transition: all 0.3s;" onfocus="this.style.borderColor='var(--primary-accent)'; this.style.background='rgba(255,255,255,0.1)';" onblur="this.style.borderColor='rgba(255,255,255,0.1)'; this.style.background='rgba(255,255,255,0.05)';">
                 </div>
 
-                <div class="form-group">
-                    <label for="email">Work Email</label>
-                    <input type="email" id="email" placeholder="name@company.com" required>
+                <div class="form-group animate-on-scroll delay-4" style="margin-bottom: 1.25rem;">
+                    <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Work Email</label>
+                    <input type="email" id="email" placeholder="name@company.com" required style="width: 100%; padding: 0.75rem 1rem; border-radius: 0.5rem; border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(255, 255, 255, 0.05); color: white; outline: none; font-family: inherit; transition: all 0.3s;" onfocus="this.style.borderColor='var(--primary-accent)'; this.style.background='rgba(255,255,255,0.1)';" onblur="this.style.borderColor='rgba(255,255,255,0.1)'; this.style.background='rgba(255,255,255,0.05)';">
                 </div>
 
-                <div class="form-group">
-                    <label for="role">Role</label>
-                    <select id="role" required
-                        style="width:100%;padding:0.75rem 1rem;border-radius:0.5rem;border:none;background:rgba(255, 255, 255, 0.1);color:white;font-size:1rem;outline:none;">
-                        <option value="" disabled selected style="color:black;">Select a Role</option>
-                        <option value="user" style="color:black;">User</option>
-                        <option value="admin" style="color:black;">Admin</option>
+                <div class="form-group animate-on-scroll delay-5" style="margin-bottom: 1.25rem;">
+                    <label for="role" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Role</label>
+                    <select id="role" required style="width: 100%; padding: 0.75rem 1rem; border-radius: 0.5rem; border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(15, 23, 42, 0.9); color: white; outline: none; font-family: inherit; appearance: none; transition: all 0.3s;" onfocus="this.style.borderColor='var(--primary-accent)';" onblur="this.style.borderColor='rgba(255,255,255,0.1)';">
+                        <option value="" disabled selected>Select a Role</option>
+                        <option value="user">Engineering Lead</option>
+                        <option value="admin">IT Administrator</option>
+                        <option value="executive">Executive</option>
+                        <option value="other">Other</option>
                     </select>
                 </div>
 
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="••••••••" required>
+                <div class="form-group animate-on-scroll delay-6" style="margin-bottom: 2rem;">
+                    <label for="password" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Password</label>
+                    <input type="password" id="password" placeholder="••••••••" required style="width: 100%; padding: 0.75rem 1rem; border-radius: 0.5rem; border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(255, 255, 255, 0.05); color: white; outline: none; font-family: inherit; transition: all 0.3s;" onfocus="this.style.borderColor='var(--primary-accent)'; this.style.background='rgba(255,255,255,0.1)';" onblur="this.style.borderColor='rgba(255,255,255,0.1)'; this.style.background='rgba(255,255,255,0.05)';">
                 </div>
 
-                <button type="submit" class="btn btn-primary" style="width: 100%;">Create Account</button>
+                <div class="animate-scale delay-6">
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">Create Account</button>
+                </div>
             </form>
 
-            <div class="auth-links"
-                style="display: flex; flex-direction: column; gap: 0.5rem; align-items: center; margin-top: 1.5rem;">
-                <span>Already have an account? <a href="login.html">Log in</a></span>
-                <a href="index.html" style="font-size: 0.85rem; color: #cbd5e1; text-decoration: underline;">&larr; Back
-                    to Home</a>
+            <div class="auth-links animate-on-scroll delay-6"
+                style="display: flex; flex-direction: column; gap: 0.75rem; align-items: center; margin-top: 2rem;">
+                <span style="color: #94a3b8;">Already have an account? <a href="login.html" style="color: var(--primary-accent); font-weight: 600;">Log in</a></span>
+                <a href="index.html" style="font-size: 0.875rem; color: #94a3b8; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='#94a3b8'">&larr; Back to Home</a>
             </div>
         </div>
     </main>
+
 
     <script src="js/main.js"></script>
 </body>

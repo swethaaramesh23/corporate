@@ -23,7 +23,6 @@
                 <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a
                     href="blog.html">Blog</a><a href="career.html">Careers</a><a href="contact.html">Contact</a>
                 <a href="login.html" class="btn btn-outline" style="padding:0.5rem 1rem;">Log In</a>
-                <a href="signup.html" class="btn btn-primary" style="padding:0.5rem 1rem;">Sign Up</a>
             </nav>
             <button class="mobile-menu-btn">&#9776;</button>
         </div>
@@ -32,205 +31,134 @@
     <main>
         <div class="page-hero">
             <div class="container animate-scale">
-                <h1>Company Blog</h1>
-                <p>Insights, updates, and thoughts from the Stackly team.</p>
+                <h1>Insights & Innovations</h1>
+                <p>Stay ahead with the latest trends in enterprise technology and software engineering.</p>
             </div>
         </div>
+
+        <!-- Featured Post -->
+        <section class="section">
+            <div class="container">
+                <div class="flex-layout">
+                    <div class="animate-slide-left">
+                        <img src="assets/hero_bg.webp" alt="Featured Post" style="width:100%; height: 400px; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-xl);">
+                    </div>
+                    <div class="animate-slide-right delay-1">
+                        <span class="hero-subtitle">Featured Article</span>
+                        <h2>The Future of Distributed Systems in 2026</h2>
+                        <p>As we move further into the decade, the landscape of distributed systems is shifting towards even greater decentralization and autonomous management. Learn how Stackly is leading this charge.</p>
+                        <div style="margin-top: 1.5rem; display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--primary-accent); color: white; display: flex; align-items: center; justify-content: center; font-weight: bold;">MC</div>
+                            <div>
+                                <span style="font-weight: 600; display: block;">Marcus Chen</span>
+                                <span style="font-size: 0.875rem; color: #64748b;">May 12, 2026 • 12 min read</span>
+                            </div>
+                        </div>
+                        <a href="404.html" class="btn btn-primary" style="margin-top: 2rem;">Read Full Article</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="section bg-light">
             <div class="container">
                 <div class="grid-3">
-                    <div class="card blog-card animate-on-scroll" style="transition-delay:0.1s; padding:0;">
-                        <div
-                            style="background-color: var(--primary-color); height: 200px; width: 100%; display: flex; align-items: center; justify-content: center; color: white;">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path
-                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-                            </svg>
-                        </div>
-                        <div class="blog-card-body">
-                            <span class="blog-tag">Technology</span>
-                            <h3>The Future of Cloud Native Architectures</h3>
-                            <p>Explore how modern enterprises are leveraging cloud-native solutions to scale faster and
-                                cheaper.</p>
-                            <div class="blog-card-meta">
-                                <span>May 4, 2026</span> • <span>5 min read</span>
-                            </div>
+                    <div class="card animate-on-scroll delay-1" style="padding:0; overflow:hidden;">
+                        <img src="assets/services_hero.webp" alt="Blog 1" class="card-img" style="margin-bottom:0; border-radius:0;">
+                        <div class="blog-content" style="padding: 2rem;">
+                            <span class="job-tag">Engineering</span>
+                            <h3>Optimizing Node.js for High-Throughput APIs</h3>
+                            <p>Discover advanced techniques for scaling your backend services to handle millions of
+                                concurrent connections.</p>
+                            <a href="404.html" class="btn-text">Read More &rarr;</a>
                         </div>
                     </div>
-
-                    <div class="card blog-card animate-on-scroll" style="transition-delay:0.2s; padding:0;">
-                        <div
-                            style="background-color: var(--secondary-color); height: 200px; width: 100%; display: flex; align-items: center; justify-content: center; color: white;">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                            </svg>
-                        </div>
-                        <div class="blog-card-body">
-                            <span class="blog-tag">Security</span>
-                            <h3>Zero Trust Security in 2026</h3>
-                            <p>Why perimeter-based security is no longer enough and how to implement zero trust models.
-                            </p>
-                            <div class="blog-card-meta">
-                                <span>April 28, 2026</span> • <span>8 min read</span>
-                            </div>
+                    <div class="card animate-on-scroll delay-2" style="padding:0; overflow:hidden;">
+                        <img src="assets/about_team.webp" alt="Blog 2" class="card-img" style="margin-bottom:0; border-radius:0;">
+                        <div class="blog-content" style="padding: 2rem;">
+                            <span class="job-tag">Security</span>
+                            <h3>Zero Trust Architecture: Beyond the Hype</h3>
+                            <p>A deep dive into implementing zero-trust principles in a modern corporate network
+                                environment.</p>
+                            <a href="404.html" class="btn-text">Read More &rarr;</a>
                         </div>
                     </div>
-
-                    <div class="card blog-card animate-on-scroll" style="transition-delay:0.3s; padding:0;">
-                        <div
-                            style="background-color: var(--accent-color); height: 200px; width: 100%; display: flex; align-items: center; justify-content: center; color: white;">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <circle cx="12" cy="12" r="10" />
-                                <polyline points="12 6 12 12 16 14" />
-                            </svg>
-                        </div>
-                        <div class="blog-card-body">
-                            <span class="blog-tag">Company News</span>
-                            <h3>Stackly Expands to Europe</h3>
-                            <p>We are thrilled to announce the opening of our new London office to better serve our
-                                European clients.</p>
-                            <div class="blog-card-meta">
-                                <span>April 15, 2026</span> • <span>3 min read</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="card blog-card animate-on-scroll" style="transition-delay:0.4s; padding:0;">
-                        <div
-                            style="background-color: #f59e0b; height: 200px; width: 100%; display: flex; align-items: center; justify-content: center; color: white;">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M21 2H3v16h5v4l4-4h9V2z" />
-                            </svg>
-                        </div>
-                        <div class="blog-card-body">
-                            <span class="blog-tag">Productivity</span>
-                            <h3>Streamlining Remote Workflows</h3>
-                            <p>Discover 5 practical strategies to keep your remote teams engaged, aligned, and highly productive.</p>
-                            <div class="blog-card-meta">
-                                <span>March 30, 2026</span> • <span>6 min read</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card blog-card animate-on-scroll" style="transition-delay:0.5s; padding:0;">
-                        <div
-                            style="background-color: #8b5cf6; height: 200px; width: 100%; display: flex; align-items: center; justify-content: center; color: white;">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                            </svg>
-                        </div>
-                        <div class="blog-card-body">
-                            <span class="blog-tag">Finance</span>
-                            <h3>Optimizing Cloud Spend</h3>
-                            <p>Is your cloud bill out of control? Learn how enterprise companies are reducing infrastructure costs.</p>
-                            <div class="blog-card-meta">
-                                <span>March 12, 2026</span> • <span>7 min read</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card blog-card animate-on-scroll" style="transition-delay:0.6s; padding:0;">
-                        <div
-                            style="background-color: #10b981; height: 200px; width: 100%; display: flex; align-items: center; justify-content: center; color: white;">
-                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-                            </svg>
-                        </div>
-                        <div class="blog-card-body">
-                            <span class="blog-tag">Data</span>
-                            <h3>Real-time Analytics Architectures</h3>
-                            <p>A deep dive into building systems that process millions of events per second with sub-millisecond latency.</p>
-                            <div class="blog-card-meta">
-                                <span>February 24, 2026</span> • <span>10 min read</span>
-                            </div>
+                    <div class="card animate-on-scroll delay-3" style="padding:0; overflow:hidden;">
+                        <img src="assets/career_hero.webp" alt="Blog 3" class="card-img" style="margin-bottom:0; border-radius:0;">
+                        <div class="blog-content" style="padding: 2rem;">
+                            <span class="job-tag">Culture</span>
+                            <h3>Building a Remote-First Engineering Culture</h3>
+                            <p>Lessons learned from scaling our global team across 15 time zones while maintaining
+                                velocity.</p>
+                            <a href="404.html" class="btn-text">Read More &rarr;</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section bg-dark text-center">
-            <div class="container animate-scale">
-                <h2>Subscribe to our Newsletter</h2>
-                <p style="margin-bottom:2rem; color: #cbd5e1;">Get the latest industry insights and company news delivered straight to your inbox.</p>
-                <form id="newsletterForm" style="max-width: 500px; margin: 0 auto; display: flex; gap: 1rem;">
-                    <input type="email" placeholder="Enter your email address" required style="flex: 1; padding: 0.75rem 1.5rem; border-radius: 0.5rem; border: none; outline: none; font-family: inherit; font-size: 1rem;">
-                    <button type="submit" class="btn btn-primary" style="white-space: nowrap;">Subscribe</button>
-                </form>
+        <!-- Newsletter Section -->
+        <section class="section">
+            <div class="container">
+                <div class="bg-dark animate-scale delay-1" style="padding: 4rem; border-radius: var(--radius-lg); text-align: center; color: white;">
+                    <h2 style="color: white;">Subscribe to Our Newsletter</h2>
+                    <p style="color: #cbd5e1; max-width: 500px; margin: 0 auto 2.5rem;">Get the latest insights, case studies, and company news delivered straight to your inbox weekly.</p>
+                    <form action="404.html" class="flex-layout" style="max-width: 600px; margin: 0 auto; gap: 1rem;">
+                        <input type="email" placeholder="Enter your work email" style="flex:2; padding: 1rem; border-radius: var(--radius-md); border: none; outline: none; font-family: inherit;">
+                        <button type="submit" class="btn btn-primary" style="flex:1;">Subscribe Now</button>
+                    </form>
+                    <p style="font-size: 0.75rem; color: #94a3b8; margin-top: 1.5rem;">We respect your privacy. Unsubscribe at any time.</p>
+                </div>
             </div>
         </section>
+
     </main>
 
     <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <a href="index.html" class="logo" style="margin-bottom:1.5rem;"><img src="logo1.webp"
-                            alt="Stackly Logo" style="height: 32px; width: auto;"></a>
-                    <p>Pioneering the future of enterprise software solutions. We build for scale, security, and
-                        performance.</p>
-
+                    <a href="index.html" class="footer-logo">
+                        <img src="logo1.webp" alt="Stackly Logo" style="height: 32px; width: auto;">
+                    </a>
+                    <p style="margin-top:1.5rem;">Pioneering the future of enterprise software solutions. We build for scale, security, and performance.</p>
+                    <div style="margin-top: 1rem; font-size: 0.9rem; color: #94a3b8;">
+                        <p style="margin-bottom: 0.5rem;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 8px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>info@thestackly.com</p>
+                        <p><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 8px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>+91 98765 43210</p>
+                    </div>
                 </div>
                 <div class="footer-col">
-                    <h4>Quick Links</h4>
+                    <h4>Company</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="blog.html">Blog</a></li>
                         <li><a href="career.html">Careers</a></li>
-                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Resources</h4>
                     <ul>
-                        <li><a href="#">Documentation</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Support</a></li>
                         <li><a href="#">Help Center</a></li>
-                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Developer API</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+                    <h4>Connect</h4>
+                    <div class="social-icons" style="display:flex; gap: 1rem;">
+                        <a href="#" class="social-icon" style="color:#94a3b8;"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                        <a href="#" class="social-icon" style="color:#94a3b8;"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+                        <a href="#" class="social-icon" style="color:#94a3b8;"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 Stackly Inc. All rights reserved.</p>
-                <div class="social-icons">
-                    <a href="#" class="social-icon" title="Facebook"><svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                        </svg></a>
-                    <a href="#" class="social-icon" title="YouTube"><svg viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43zM9.75 15.02V8.48l5.75 3.27-5.75 3.27z" />
-                        </svg></a>
-                    <a href="#" class="social-icon" title="Twitter"><svg viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
-                        </svg></a>
-                    <a href="#" class="social-icon" title="Instagram"><svg viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                        </svg></a>
-                    <a href="#" class="social-icon" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                            <rect x="2" y="9" width="4" height="12" />
-                            <circle cx="4" cy="4" r="2" />
-                        </svg></a>
+                <div style="display:flex; gap: 2rem;">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
                 </div>
             </div>
         </div>
