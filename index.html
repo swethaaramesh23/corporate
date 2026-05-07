@@ -37,12 +37,25 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero"
-            style="background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('assets/service_hero.webp'); background-size: cover; background-position: center;">
+        <section class="hero">
+            <div class="hero-slider">
+                <div class="hero-slide active" style="background-image: url('assets/h1.webp');"></div>
+                <div class="hero-slide" style="background-image: url('assets/h2.webp');"></div>
+                <div class="hero-slide" style="background-image: url('assets/h3.webp');"></div>
+                <div class="hero-slide" style="background-image: url('assets/it solution.webp');"></div>
+            </div>
+            <!-- 3D Floating Elements -->
+            <div class="floating-element" style="top: 15%; left: 10%; animation-delay: 0s;"></div>
+            <div class="floating-element" style="top: 60%; left: 5%; animation-delay: -2s; width: 30px; height: 30px;">
+            </div>
+            <div class="floating-element" style="top: 20%; left: 85%; animation-delay: -5s; width: 40px; height: 40px;">
+            </div>
+            <div class="floating-element" style="top: 75%; left: 80%; animation-delay: -7s;"></div>
+
             <div class="container hero-container">
                 <div class="hero-content animate-slide-left">
                     <span class="hero-subtitle">Enterprise Grade Solutions</span>
-                    <h1 class="animate-on-scroll delay-1"
+                    <h1 class="animate-on-scroll"
                         style="font-size: clamp(3rem, 5vw, 4rem); line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -0.03em; color: var(--text-main);">
                         Architecting the Future of <span style="color: var(--primary-accent);">Scalable Business.</span>
                     </h1>
@@ -58,12 +71,25 @@
                             style="padding: 1rem 2.5rem; font-size: 1.05rem;">Explore Solutions</a>
                     </div>
                 </div>
-                <div class="hero-image animate-slide-right delay-2" style="position: relative;">
+                <div class="hero-image animate-slide-right delay-2" style="position: relative; overflow: hidden;">
                     <div
                         style="position: absolute; inset: -20px; background: linear-gradient(135deg, var(--primary-light) 0%, transparent 100%); border-radius: var(--radius-xl); z-index: -1; opacity: 0.5;">
                     </div>
-                    <img src="assets/hero_bg.webp" alt="Enterprise Solutions"
-                        style="border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.1); border: 1px solid var(--border-color);">
+                    <div class="hero-image-slider">
+                        <img src="assets/img3.webp" alt="Solution 1" class="hero-sub-slide active">
+                        <img src="assets/o1.webp" alt="Solution 2" class="hero-sub-slide">
+                        <img src="assets/o2.webp" alt="Solution 3" class="hero-sub-slide">
+                    </div>
+                </div>
+            </div>
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator animate-on-scroll delay-5">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrow">
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </section>
@@ -136,22 +162,82 @@
                 </div>
                 <div class="grid-3">
                     <div class="card animate-scale delay-1">
-                        <img src="assets/img5.webp" alt="Global Solutions" class="card-img" loading="lazy" />
-                        <h3>Global Enterprise</h3>
+                        <img src="assets/img1.webp" alt="Cloud Computing" class="card-img" loading="lazy" />
+                        <h3>Cloud Computing</h3>
                         <p>We deliver scalable cloud-based enterprise solutions that help businesses expand globally.
                             Our platforms ensure high performance, security, and seamless integration.</p>
                     </div>
                     <div class="card animate-scale delay-2">
-                        <img src="assets/img6.webp" alt="Expert Team" class="card-img" loading="lazy" />
-                        <h3>Expert Strategy</h3>
-                        <p>Our experts provide data-driven insights and strategic consulting to help you make smarter
-                            business decisions and optimize your performance.</p>
+                        <img src="assets/img9.webp" alt="Cyber Security" class="card-img" loading="lazy" />
+                        <h3>Cyber Security</h3>
+                        <p>Protect your critical infrastructure with our advanced cyber defense systems. We implement
+                            zero-trust
+                            architectures and real-time threat monitoring.</p>
                     </div>
                     <div class="card animate-scale delay-3">
-                        <img src="assets/img7.webp" alt="Future Ready" class="card-img" loading="lazy" />
-                        <h3>Future Operations</h3>
-                        <p>We implement advanced security systems and modern operational frameworks to protect your
-                            business and ensure smooth, efficient processes.</p>
+                        <img src="assets/img2.webp" alt="Database Development" class="card-img" loading="lazy" />
+                        <h3>Database Development</h3>
+                        <p>Custom software and database development tailored to your specific business needs.
+                            Optimized for high-concurrency and data integrity.</p>
+                    </div>
+                    <div class="card animate-scale delay-4">
+                        <img src="assets/it solution.webp" alt="AI Solution" class="card-img" loading="lazy" />
+                        <h3>AI Solutions</h3>
+                        <p>Empower your operations with intelligent automation and machine learning insights.
+                            Built to drive efficiency and innovation.</p>
+                    </div>
+                </div>
+
+                <!-- Core Technologies & Expertise (Scrolling Marquee) -->
+                <div class="text-center animate-on-scroll" style="margin-top: 8rem; margin-bottom: 4rem;">
+                    <span class="hero-subtitle">Technical Excellence</span>
+                    <h2>Our Core Tech Stack & Expertise</h2>
+                </div>
+            </div>
+
+            <div class="tech-marquee-container">
+                <div class="tech-marquee-wrapper">
+                    <div class="tech-marquee-content">
+                        <div class="tech-item">
+                            <h4>Cloud Infrastructure</h4>
+                            <p>AWS / Azure / GCP / Kubernetes</p>
+                        </div>
+                        <div class="tech-item">
+                            <h4>Cyber Security</h4>
+                            <p>Zero-Trust / SIEM / Threat Intel</p>
+                        </div>
+                        <div class="tech-item">
+                            <h4>Databases</h4>
+                            <p>PostgreSQL / MongoDB / Redis / Oracle</p>
+                        </div>
+                        <div class="tech-item">
+                            <h4>AI & ML</h4>
+                            <p>NLP / Computer Vision / LLMs</p>
+                        </div>
+                        <div class="tech-item">
+                            <h4>Frontend</h4>
+                            <p>React JS / Next.js / TypeScript</p>
+                        </div>
+                        <div class="tech-item">
+                            <h4>Backend Systems</h4>
+                            <p>Node.js / Python / Go / Java</p>
+                        </div>
+                        <div class="tech-item">
+                            <h4>DevOps & Tools</h4>
+                            <p>Docker / Terraform / CI/CD</p>
+                        </div>
+                        <div class="tech-item">
+                            <h4>Mobile Apps</h4>
+                            <p>React Native / Flutter</p>
+                        </div>
+                        <div class="tech-item">
+                            <h4>QA & Testing</h4>
+                            <p>Selenium / Cypress / Jest</p>
+                        </div>
+                        <div class="tech-item">
+                            <h4>Integrations</h4>
+                            <p>GraphQL / REST / Kafka</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -280,7 +366,7 @@
                 <h2>Meet the Visionaries</h2>
                 <div class="grid-3" style="margin-top: 3rem;">
                     <div class="card animate-on-scroll delay-1">
-                        <img src="assets/i1.webp" alt="Elena Rodriguez"
+                        <img src="assets/i2.webp" alt="Elena Rodriguez"
                             style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem;">
                         <h3>Elena Rodriguez</h3>
                         <p class="hero-subtitle" style="font-size: 0.85rem; margin-bottom: 0.5rem;">CEO</p>
@@ -288,7 +374,7 @@
                         </p>
                     </div>
                     <div class="card animate-on-scroll delay-2">
-                        <img src="assets/i2.webp" alt="Marcus Chen"
+                        <img src="assets/i1.webp" alt="Marcus Chen"
                             style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem;">
                         <h3>Marcus Chen</h3>
                         <p class="hero-subtitle" style="font-size: 0.85rem; margin-bottom: 0.5rem;">CTO</p>
@@ -431,8 +517,8 @@
             <div class="footer-bottom">
                 <p>&copy; 2026 Stackly Inc. All rights reserved.</p>
                 <div style="display:flex; gap: 2rem;">
-                    <a href="#">Privacy</a>
-                    <a href="#">Terms</a>
+                    <a href="404.html">Privacy</a>
+                    <a href="404.html">Terms</a>
                 </div>
             </div>
         </div>

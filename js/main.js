@@ -165,4 +165,46 @@ document.addEventListener('DOMContentLoaded', () => {
         counterObserver.observe(statsSection);
     }
 
+    // Hero Slider Logic (Images Only)
+    const slides = document.querySelectorAll('.hero-slide');
+    let currentSlide = 0;
+
+    if (slides.length > 0) {
+        const nextSlide = () => {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        };
+        setInterval(nextSlide, 3000);
+    }
+
+    // 3D Tilt Effect for Hero Image
+    const heroImage = document.querySelector('.hero-image');
+    if (heroImage) {
+        document.addEventListener('mousemove', (e) => {
+            const { clientX, clientY } = e;
+            const { innerWidth, innerHeight } = window;
+            
+            const rotateX = (clientY / innerHeight - 0.5) * -20; // Max 10 degrees
+            const rotateY = (clientX / innerWidth - 0.5) * 20; // Max 10 degrees
+            
+            heroImage.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+        
+        // Reset on mouse leave
+        document.addEventListener('mouseleave', () => {
+            heroImage.style.transform = `rotateX(0deg) rotateY(0deg)`;
+        });
+    }
+
+    // Secondary Hero Slider (Right Side)
+    const subSlides = document.querySelectorAll('.hero-sub-slide');
+    let currentSubSlide = 0;
+    if (subSlides.length > 0) {
+        setInterval(() => {
+            subSlides[currentSubSlide].classList.remove('active');
+            currentSubSlide = (currentSubSlide + 1) % subSlides.length;
+            subSlides[currentSubSlide].classList.add('active');
+        }, 3000);
+    }
 });
